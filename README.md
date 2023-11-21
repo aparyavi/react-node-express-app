@@ -7,15 +7,18 @@ The code is divided into two parts; back end and front end. The back end main fi
 where a new Server object is initialized from the Server class located in 
 (`models/server.js file`)
 
-New api endpoints can be created in server.js by adding to the paths object:
+
+### Create API Endpoints
+New API endpoints can be created in server.js by adding to the paths object:
 
 ```javascript
- this.app = express();
-        this.port = process.env.PORT || 3010;
-        this.paths = {
-            response: "/api/response",
-        };
+this.app = express();
+this.port = process.env.PORT || 3010;
+this.paths = {
+   response: "/api/response",
+   // add endpoints here
+};
 
-        this.middlewares();
-        this.routes();
+this.middlewares();
+this.routes();
 ```
