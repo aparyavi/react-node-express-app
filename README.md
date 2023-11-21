@@ -55,6 +55,27 @@ this.app.get("*", (req, res) => {
 });
 ```
 
+### Client Side
+Once the client side is up and running, the connection to the back end is established using (`axios`) library.
+
+(`getResponseFromServer()`) is a function in (`react_app/src/App.js`) that uses (`axios`) to get a simple response from the server.
+```javascript
+async function getResponseFromServer() {
+   // API call to /api/response endpoint
+   const result = await axios.get(config.server + 'api/response')
+   // set response using React Hooks
+   setResponse(result.data)
+}
+```
+(`react_app/src/config.js`) can be modified to change the API from localhost to any other source.
+```javascript
+const config = {
+    server: "http://localhost:3010/",
+};
+
+export default config;
+```
+
 ### Deployment
 To deploy this application, we need to first build the front end by running (`npm run build`) which will consolidate all of the front end code into the (`react_app/build`) directory.
 
