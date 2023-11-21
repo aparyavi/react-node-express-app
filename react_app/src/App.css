@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+.server_click_button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.server_click_button h3 {
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +44,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
