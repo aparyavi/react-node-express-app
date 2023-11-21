@@ -23,7 +23,8 @@ You can start the React app locally by running:
 ```sh
 npm start
 ```
-<img width="1792" alt="Screenshot 2023-11-20 at 7 39 29 PM" src="https://github.com/aparyavi/react-node-express-app/assets/62215723/9d7f6404-12fc-4fda-a346-88bb90ad519d">
+<img width="681" alt="Screenshot 2023-11-20 at 7 40 52 PM" src="https://github.com/aparyavi/react-node-express-app/assets/62215723/b5cf9a46-c9a1-419f-8b38-2cb241fa3c27">
+
 
 ### Create API Endpoints
 New API endpoints can be created in server.js by adding to the paths object:
