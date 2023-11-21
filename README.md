@@ -54,3 +54,32 @@ this.app.get("*", (req, res) => {
    );
 });
 ```
+
+### Deployment
+To deploy this application, we need to first build the front end by running (`npm run build`) which will consolidate all of the front end code into the (`react_app/build`) directory.
+
+Next, we need to tell our back end server how to load the client application inside the (`react_app/build`) directory.
+
+This is done in (`models/server.js`):
+```javascript
+middlewares() {
+   this.app.use(cors());
+   this.app.use(express.json());
+
+   // Pick up React index.html file
+   this.app.use(
+      express.static(path.join(__dirname, "../react_app/build"))
+   );
+}
+
+// Bind controllers to routes
+routes() {
+   this.app.use(this.paths.response, require("../routes/response"));
+   // Catch all requests that don't match any route
+   this.app.get("*", (req, res) => {
+      res.sendFile(
+         path.join(__dirname, "../react_app/build/index.html")
+      );
+   });
+}
+```
