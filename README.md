@@ -23,6 +23,7 @@ You can start the React app locally by running:
 ```sh
 npm start
 ```
+<img width="1792" alt="Screenshot 2023-11-20 at 7 39 29 PM" src="https://github.com/aparyavi/react-node-express-app/assets/62215723/9d7f6404-12fc-4fda-a346-88bb90ad519d">
 
 ### Create API Endpoints
 New API endpoints can be created in server.js by adding to the paths object:
@@ -41,7 +42,7 @@ this.routes();
 After adding the endpoint to paths, the API endpoint should be routed to a file that can handle the API call.
 ```javascript
 this.app.use(this.paths.response, require("../routes/response"));
-// add path to file to handle API endpoint
+// add path to file to handle API call
 
 // Catch all requests that don't match any route
 this.app.get("*", (req, res) => {
