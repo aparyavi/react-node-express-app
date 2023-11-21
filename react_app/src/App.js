@@ -11,7 +11,6 @@ function App() {
     setResponse(result.data)
   }
 
-  console.log(response)
 
   return (
     <div className="App">
