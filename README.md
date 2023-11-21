@@ -23,6 +23,8 @@ You can start the React app locally by running:
 ```sh
 npm start
 ```
+This window should pop up:
+
 <img width="717" alt="Screenshot 2023-11-20 at 7 41 39 PM" src="https://github.com/aparyavi/react-node-express-app/assets/62215723/30e2c183-e5f6-4176-88f5-b07c9c5121ae">
 
 
