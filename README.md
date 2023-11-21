@@ -58,7 +58,7 @@ this.app.get("*", (req, res) => {
 ### Client Side
 Once the client side is up and running, the connection to the back end is established using `axios` library.
 
-`getResponseFromServer()` is a function in (`react_app/src/App.js`) that uses `axios` to get a simple response from the server.
+`getResponseFromServer()` is a function in (`src/App.js`) that uses `axios` to get a simple response from the server.
 ```javascript
 async function getResponseFromServer() {
    // API call to /api/response endpoint
@@ -67,7 +67,7 @@ async function getResponseFromServer() {
    setResponse(result.data)
 }
 ```
-(`react_app/src/config.js`) can be modified to change the API from localhost to any other source.
+(`src/config.js`) can be modified to change the API from localhost to any other source.
 ```javascript
 const config = {
     server: "http://localhost:3010/",
